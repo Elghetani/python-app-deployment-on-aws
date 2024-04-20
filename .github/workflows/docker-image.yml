@@ -18,6 +18,4 @@ jobs:
           password: AbdLwhap123
 
       - name: run docker file
-        run: docker build -t elghetani . 
-      - name: push to docker hub
-        run: docker push elghetani
+        run: docker build -t elghetani .
