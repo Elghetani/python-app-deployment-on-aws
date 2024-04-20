@@ -19,5 +19,7 @@ jobs:
 
       - name: run docker file
         run: docker build -t elghetani .
+      - name: naming
+        run: docker tag elghetani elghetani/elghetani
       - name: push to docker hub
         run: docker push elghetani/elghetani
