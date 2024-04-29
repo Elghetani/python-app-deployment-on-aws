@@ -17,8 +17,8 @@ jobs:
           username: elghetani
           password: AbdLwhap123
 
-      - name: build from docker file
+      - name: build and naming from docker file
         run: docker build -t elghetani/elghetani:1.0 .
-        
+
       - name: push to docker hub
         run: docker push elghetani/elghetani
